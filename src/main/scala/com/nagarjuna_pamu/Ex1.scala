@@ -10,7 +10,7 @@ object Fraction {
   def unapply(input: Fraction) = if (input.denum == 0) None else Some((input.num, input.denum))
 }
 
-object DemoIt {
+object Ex1 {
   def main(args: Array[String]): Unit = {
     var Fraction(num, denum) = Fraction(1, 2) * Fraction(1, 4)
     println(num + " " + denum)
